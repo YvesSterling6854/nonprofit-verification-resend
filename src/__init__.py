@@ -1,0 +1,2 @@
+"""Nonprofit verification resend example."""
+

@@ -1,0 +1,21 @@
+[project]
+name = "nonprofit-verification-resend"
+version = "0.1.0"
+description = "A typed Python service for resending stuck nonprofit verification codes and reading delivery state."
+requires-python = ">=3.11"
+dependencies = [
+  "fastapi>=0.115,<1",
+  "pydantic>=2.9,<3",
+  "uvicorn>=0.30,<1",
+]
+
+[project.optional-dependencies]
+test = [
+  "httpx>=0.27,<1",
+  "pytest>=8.3,<9",
+]
+
+[tool.pytest.ini_options]
+pythonpath = ["."]
+testpaths = ["tests"]
+
